@@ -1,0 +1,11 @@
+server:
+    port: 9090
+
+eureka:
+  instance:
+    hostname: eureka-demo
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:${server.port}/eureka/
